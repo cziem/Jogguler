@@ -1,2 +1,4 @@
-# Jogguler
-This is a basic quiz and exam based web app that would also integrate tips based on selected subjects
+Name: Jogguler
+Web: http://www.jogguler.io
+Dev: Elan Page
+Desc: This site is a brain refresher and knowledge tester.

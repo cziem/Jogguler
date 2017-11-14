@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="../css/joggulerMain.css">
+  <title>Jogguler :: Main Page</title>
+</head>
+<body>
+
+  <div class="wrapper">
+    <div class="screenCast">
+      <section id="left_side" class="secHeight">
+        <div id="tipSide">
+          <p>
+            Get Jogguler Tips
+          </p>
+        </div>
+      </section>
+      <section id="right_side" class="secHeight">
+        <div id="quizSide">
+          <p>
+            Start Jogguler Exercise
+          </p>
+        </div>
+      </section>
+    </div>
+    
+    <h2>jogguler.io</h2>
+    <h5>jogguler.io</h5>
+  </div>
+
+  <!-- Modal -->
+  <div id="selSubject" class="modal">
+    <div id="modal-content">
+      <div class="modalHeader">
+        <span class="close">&times;</span>
+        <h1 id="modalHead">Select your preferred subject</h1>
+      </div>
+      <div class="modalBody">
+        <label for="selectSub">Select Preferred subject</label>
+        <select name="chooseSub" id="chooseSub" placeholder="Here we go">
+          <option value="makeChoice" id="disabled">-- Make a choice --</option>
+          <option value="ai" id="ai">Artificial Intelligence</option>
+          <option value="angularJs" id="angularJs">AngularJs</option>
+          <option value="css" id="css3">CSS3</option>
+          <option value="django" id="django">Django</option>
+          <option value="erlang" id="erlang">Erlang</option>
+          <option value="expressJs" id="expressJs">ExpressJs</option>
+          <option value="git" id="git">Git</option>
+          <option value="go" id="go">Go</option>
+          <option value="html" id="html">HTML5</option>
+          <option value="js" id="js">JavaScript</option>
+          <option value="jquery" id="jquery">jQuery</option>
+          <option value="less" id="less">Less</option>
+          <option value="mongoDb" id="mongoDb">MongoDB</option>
+          <option value="mysql" id="mysql">MySQL</option>
+          <option value="nodeJs" id="nodeJs">NodeJs</option>
+          <option value="pearl" id="pearl">Pearl</option>
+          <option value="php" id="php">PHP</option>
+          <option value="python" id="python">Python</option>
+          <option value="rubyRails" id="rubyRails">Ruby and Rails</option>
+          <option value="sass" id="sass">Sass</option>
+        </select>
+
+        <div>
+          <button type="submit" id="submit">Get Tips</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="../js/joggulerMain.js"></script>
+  <script src="../js/joggulerTips.js"></script>
+</body>
+</html>

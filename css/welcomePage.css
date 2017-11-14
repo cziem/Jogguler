@@ -1,0 +1,232 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 24px;
+  background: rgba(0, 0, 0, 0.85);
+  color: white;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+h2 {
+  position: absolute;
+  top: 43%;
+  left: 45%;
+  font-size: 18rem;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: clip;
+  max-width: 736px;
+  letter-spacing: -27px;
+  color: #505050;
+}
+
+h4 {
+  position: absolute;
+  top: 8%;
+  left: -8.4%;
+  font-size: 5.88rem;
+  color: #202020;
+}
+
+h5 {
+  position: absolute;
+  bottom: 2%;
+  right: 0;
+  font-size: 3rem;
+  color: #1f1f1f;
+}
+
+#overlay_left {
+  width: 50%;
+  float: left;
+  margin: 0 auto;
+  height: 695px;
+  background: rgba(0, 0, 0, 0.4);
+  text-indent: -9999px;
+  white-space: nowrap;
+  z-index: 2;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#overlay_right {
+  width: 50%;
+  float: right;
+  margin: 0 auto;
+  height: 695px;
+  background: rgba(0, 0, 0, 0.6);
+  text-indent: -9999px;
+  white-space: nowrap;
+  z-index: 2;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+#overlay_left:hover {
+  background: rgba(0, 0, 0, 0.6);
+  transition: all .4s ease-in;
+}
+#overlay_right:hover {
+  background: rgba(0, 0, 0, 0.4);
+  transition: all .4s ease-in;
+}
+
+#joggulerEnter {
+  position: absolute;
+  top: 30%;
+  left: 43%;
+  z-index: 100;
+  border: 3px solid #1b1b1b;
+  border-radius: 60%;
+  height: 200px;
+  width: 200px;
+  background-color: #35191c;
+}
+
+#joggulerEnter:hover {
+  cursor: pointer;
+  opacity: .8;
+  transition: all .3s ease-in-out;
+}
+
+#joggulerEnter h1 {
+  position: relative;
+  bottom: 14px;
+  right: 10px;
+  font-size: 12rem;
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+}
+
+/* joggulerEnter background changes */
+.bg0 { background-color: #35191c; }
+.bg1 { background-color: #35192a; }
+.bg2 { background-color: #321935; }
+.bg3 { background-color: #1c1935; }
+.bg4 { background-color: #192a35; }
+.bg5 { background-color: #193235; }
+.bg6 { background-color: #193525; }
+.bg7 { background-color: #213519; }
+.bg8 { background-color: #353219; }
+.bg9 { background-color: #352319; }
+
+/* Styling the modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 200;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: #5c5c5c;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #bdbdbd;
+}
+
+/* Styling the modal content box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  width: 40%;
+  border: 1px solid #888;
+  border-radius: 12px;
+  padding: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animateTop;
+  -webkit-animation-duration: 1s;
+  animation-name: animateTop;
+  animation-duration: 1s;
+  /* animate the modal to fall from top */
+}
+
+@-webkit-keyframes animateTop {
+  from {
+    top: -800px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes animateTop {
+  from {
+    top: -800px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+/* The Close Button */
+.close {
+  color: #e7e7e7;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover, .close:focus {
+  color: #181818;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* The Modal Header */
+.modalHeader {
+  padding: 10px 16px;
+  margin: -11px;
+  background-color: #292929;
+  color: #f2f2f2;
+}
+
+.modalHeader h2 {
+  font-size: 3rem;
+  color: #d8d8d8;
+}
+
+.modalBody {
+  padding: 12px 16px;
+  text-align: justify;
+  color: #444444;
+  line-height: 1.5;
+}
+
+.modalBody #x {
+  color: #d32929;
+}
+
+.modalBody #j {
+  color: #0b5d63;
+}
+
+#new {
+  color: #0c6933;
+}
+
+/* Transition for the boxes */
+.moveLeft {
+  transform: scale3d(0, 1, 10);
+  transition: transform 1s ease-in-out;
+  transform-origin: left;
+}
+
+.moveRight {
+  /* transform: translateX(900px); I don't want the div to flow past the window width */
+  transform: scale3d(0, 1, 10);
+  transition: transform 1s ease-in-out;
+  transform-origin: right;
+}
